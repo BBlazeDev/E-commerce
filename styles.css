@@ -254,7 +254,7 @@ FEATURES
   display: flex;
 }
 
-.book:hover .book__img{
+.book:hover .book__img {
   transform: scale(1.3);
 }
 
@@ -269,12 +269,12 @@ FEATURES
 }
 
 .book__ratings {
-  margin-bottom:8px;
+  margin-bottom: 8px;
   color: #fabf2a;
 }
 
-.book__price--normal{
-  text-decoration:line-through;
+.book__price--normal {
+  text-decoration: line-through;
   padding-right: 6px;
-  color:gray;
+  color: gray;
 }
