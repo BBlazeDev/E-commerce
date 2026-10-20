@@ -160,7 +160,7 @@ HIGHLIGHTS
 
 #highlights {
   position: relative;
-  max-width: 100vw
+  max-width: 100vw;
 }
 
 #highlights:after,
@@ -174,10 +174,7 @@ HIGHLIGHTS
   background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
-
-
 }
-
 
 #highlights:before {
   top: 1px;
@@ -186,7 +183,7 @@ HIGHLIGHTS
 
 #highlights:after {
   bottom: 1px;
-   transform: translateY(100%) rotate(180deg)
+  transform: translateY(100%) rotate(180deg);
 }
 
 .highlight__wrapper {
@@ -236,15 +233,48 @@ FEATURES
   padding-top: 8vw;
   background-color: rgba(115, 66, 214, 0.3);
 }
-.books{
-  display:flex;
+.books {
+  display: flex;
 }
-.book{
-  width:25%;
+.book {
+  width: 25%;
   padding: 24px;
 }
 
-.book__img{
+.book__img {
   max-height: 380px;
+  transition: all 300ms ease;
+  cursor: no-drop;
+}
 
+.book__img--wrapper {
+  margin-bottom: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+}
+
+.book:hover .book__img{
+  transform: scale(1.3);
+}
+
+.book__title {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.book__title:hover {
+  text-decoration: underline;
+  cursor: not-allowed;
+}
+
+.book__ratings {
+  margin-bottom:8px;
+  color: #fabf2a;
+}
+
+.book__price--normal{
+  text-decoration:line-through;
+  padding-right: 6px;
+  color:gray;
 }
