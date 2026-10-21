@@ -221,6 +221,7 @@ HIGHLIGHTS
 .highlight__subtitile {
   font-size: 20px;
   margin-bottom: 16px;
+  text-align: center
 }
 
 /*
@@ -235,10 +236,13 @@ FEATURES
 }
 .books {
   display: flex;
+  flex-wrap: wrap;
+  
 }
 .book {
   width: 25%;
   padding: 24px;
+  
 }
 
 .book__img {
